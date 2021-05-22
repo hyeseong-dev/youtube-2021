@@ -20,7 +20,8 @@
     "@babel/preset-env": "^7.14.2",
     "express": "^4.17.1",
     "mongoose": "^5.12.10",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
