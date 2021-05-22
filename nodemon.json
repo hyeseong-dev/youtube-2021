@@ -1,5 +1,7 @@
 {
     "ignore": ["webpack.config.js", "src/client/*", "assets/*"],
-    "exec": "babel-node src/server.js"
+    "exec": "babel-node src/server.js",
+    "delay": "2500"
+    
 }
 
