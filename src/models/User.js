@@ -1,3 +1,4 @@
+import bcrypt from "bcrypt";
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
@@ -8,6 +9,10 @@ const userSchema = new mongoose.Schema({
     location: String,
     },
 );
+
+userSchema.pre('save', async function () {
+    this.password = await bcrypt.hash(this.password, 5); // await 키워드를 사용하므로 콜백함수는 불필요
+});
 
 const User = mongoose.model("User", userSchema);
 export default User;
