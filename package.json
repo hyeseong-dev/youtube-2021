@@ -4,7 +4,7 @@
   "description": "The best way to watch videos",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -L --exec babel-node ./src/init.js --delay 3"
+    "dev": "nodemon --exec babel-node ./src/init.js --delay 1"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.14.2",
     "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.4.1",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "mongoose": "^5.12.10",
